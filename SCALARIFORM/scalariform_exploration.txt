@@ -1,0 +1,51 @@
+Points
+
+1)settings in project/plugins.sbt
+
+resolvers += "Sonatype OSS Releases" at "https://oss.sonatype.org/service/local/staging/deploy/maven2"
+
+addSbtPlugin("org.scalariform" % "sbt-scalariform" % "1.5.1")
+
+
+
+2)settings in build.sbt
+
+scalariformSettings
+
+
+
+3)scalariform forms the source code i.e only the files in "app"
+
+
+
+
+4)advanced settings configurations throwing error.
+
+
+import scalariform.formatter.preferences._
+
+scalariformSettings
+
+ScalariformKeys.preferences := ScalariformKeys.preferences.value
+  .setPreference(AlignSingleLineCaseStatements, true)
+  .setPreference(DoubleIndentClassDeclaration, true)
+  .setPreference(PreserveDanglingCloseParenthesis, true)
+  
+  
+  site -> https://github.com/daniel-trinh/sbt-scalariform
+  
+  
+
+5)EXECUTION of command  "scalariformPreferences" DISPLAYS the default formatter settings of scalariform.
+
+
+
+
+6)Sited referred for inclusion of correct resolvers is
+https://github.com/mdr/scalariform   which directs to following site
+https://github.com/daniel-trinh/scalariform   which directs to following site
+https://github.com/daniel-trinh/sbt-scalariform 
+i.e 1) settings
+
+
+

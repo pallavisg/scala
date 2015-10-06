@@ -1,0 +1,8 @@
+Error resolved by-
+1)eof before,after & between the following two lines of build.sbt
+libraryDependencies +="io.gatling.highcharts" % "gatling-charts-highcharts" % "2.1.6" % "test"
+
+libraryDependencies +="io.gatling" % "gatling-test-framework"  % "2.1.6" % "test"
+
+2)uncommenting the following line in plugins.sbt
+addSbtPlugin("io.gatling" % "gatling-sbt" % "2.1.5")

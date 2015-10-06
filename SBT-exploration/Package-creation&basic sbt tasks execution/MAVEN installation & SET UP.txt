@@ -1,0 +1,8 @@
+1)COPY APACHE MAVEN ARCHIVE FROM \\CT-SHARE\APACHE\APACHE-MAVEN
+2)SET ENV VARIABLES
+M2_HOME=C:\Program Files\apache-maven-3.0.4
+M2=%M2_HOME%\bin
+MAVEN_OPTS=-Xms256m -Xmx512m
+
+
+3)Append the string ;%M2% to the end of the system variable, Path.

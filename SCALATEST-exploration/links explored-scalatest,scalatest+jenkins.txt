@@ -1,0 +1,77 @@
+scalatest+jenkins
+sites
+http://stackoverflow.com/questions/13369302/how-to-show-results-of-individual-test-pass-fail-in-jenkins
+https://groups.google.com/forum/#!topic/scalatest-users/vg0xrVC5jxU
+https://groups.google.com/forum/#!topic/scalatest-users/5azXUZKJizw
+http://www.artima.com/forums/flat.jsp?forum=284&thread=344401
+
+To be explored
+https://technicaltesting.wordpress.com/2014/01/16/scalatests-on-jenkins-using-maven-use-case-examples/
+https://github.com/scalatest/scalatest/issues/297
+http://www.scriptscoop.com/t/e46fb5323704/how-to-run-specific-tests-using-sbt-jenkins-plugin-for-scalatest-test.html
+
+Scalatest
+
+Sites referred
+http://www.scalatest.org/user_guide/writing_your_first_test
+http://www.scalatest.org/user_guide/using_assertions
+http://www.scalatest.org/user_guide/sharing_tests
+
+
+flatspec links
+https://jeeves-prime.googlecode.com/hg/sample/socialnet/lib/scalatest-1.6.1/doc/org/scalatest/FlatSpec$InAndIgnoreMethods.html
+
+https://jeeves-prime.googlecode.com/hg/sample/socialnet/lib/scalatest-1.6.1/doc/org/scalatest/FlatSpec$InAndIgnoreMethodsAfterTaggedAs.html
+
+http://stackoverflow.com/questions/4580287/is-it-possible-to-use-the-scalatest-bdd-syntax-in-a-junit-environment
+
+
+Hi Rashmit,
+
+I am working in details on the following points of FlatSpec style.
+
+* Matchers
+If you mix Matchers into a suite class, you can write an equality assertion in that suite like this:
+             result should equal (3)
+
+* Junit support
+To run test-cases using tools which support Junit we require this.
+
+* BDD/Given-when-then Syntax
+Writing Behaviour driven test-case is possible using the given-when –then syntax in Flatspec.
+
+* Shared tests
+Sometimes you may want to run the same test code on different fixture objects. In other words, you may want to write tests that are "shared" by different fixture objects. To accomplish this in aFlatSpec, you first place shared tests in behavior functions. These behavior functions will be invoked during the construction phase of any FlatSpec that uses them, so that the tests they contain will be registered as tests in that FlatSpec.
+
+* Tagging tests
+A FlatSpec's tests may be classified into groups by tagging them with string names. As with any suite, when executing a FlatSpec, groups of tests can optionally be included and/or excluded. To tag a FlatSpec's tests, you pass objects that extend abstract class org.scalatest.Tag to taggedAs method invoked on the string that describes the test you want to tag. Class Tag takes one parameter, a string name. If you have created Java annotation interfaces for use as group names in direct subclasses of org.scalatest.Suite, then you will probably want to use group names on your FlatSpecs that match. To do so, simply pass the fully qualified names of the Java interfaces to the Tag constructor.
+
+* Ignored tests
+To support the common use case of &#8220;temporarily&#8221; disabling a test, with the good intention of resurrecting the test at a later time, FlatSpec provides a methodignore that can be used instead of it to register a test.
+
+
+
+
+
+links to finally work on for flatspec and write test cases
+
+http://doc.scalatest.org/1.8/org/scalatest/FlatSpec.html
+
+http://doc.scalatest.org/1.5/org/scalatest/FlatSpec.html
+
+http://doc.scalatest.org/1.1/org/scalatest/FlatSpec.html
+
+http://www.hascode.com/2013/01/a-short-introduction-to-scalatest/
+
+
+Imp-links for test-case writing
+http://alvinalexander.com/scala/writing-tdd-unit-tests-with-scalatest
+
+https://www.safaribooksonline.com/library/view/scala-cookbook/9781449340292/ch18s04.html
+
+https://www.safaribooksonline.com/blog/2013/06/05/getting-started-with-scalatest/
+
+By sir
+
+https://semaphoreci.com/community/tutorials/a-hands-on-introduction-to-scalatest
+

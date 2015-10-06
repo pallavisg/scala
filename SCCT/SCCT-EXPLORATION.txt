@@ -1,0 +1,35 @@
+-For downloading dependencies of  tools which we are currently using i.e  scalastyle, scoverage, jacoco, gatling we require sbt 0.13.6/0.13.8.
+
+- SCCT , on the other hand, gets downloaded with SBT 0.12.2 .
+
+-I tried  downloading SCCT solely with SBT 0.12.2 and then tried it’s execution with other tools using SBT 0.13.8 but even that did not work. 
+
+-I tried to find a version of SBT which accomplishes resolving all dependencies including SCCT but in vain.
+(tried versions are-
+//sbt.version=0.13.8
+//sbt.version=0.12.2
+//sbt.version=0.13.6
+
+//sbt.version=0.12.1
+//sbt.version=0.12.3
+//sbt.version=0.12.4
+
+
+//sbt.version=0.13.5
+//sbt.version=0.13.7
+//sbt.version=0.13.9
+) 
+
+-When tried SCCT alone i.e removing all other tools' dependencies, I accomplished resolving its dependencies with version 0.12.2 but then this throws error when  I tried to "compile" it.
+
+-When I tried it with the code-base in play, the dependencies for execution of the very code-base take 0.13.8 version so although SCCT dependencies got resolved with 0.12.2, it's of no use.
+
+-Also as cited in the website http://mtkopone.github.io/scct/ , the latest updated information on SCCT is Dec 9 - 2012, no follow-ups after that.
+
+
+Hence, the point I want to make after exploring SCCT is that scoverage has far better support than it(as of now).So , we have the aforesaid points to carry on with it.
+
+
+Other sites explored
+http://blog.knoldus.com/2013/05/13/integrating-scala-code-coverage-tool-scct-in-play-scala-project/
+
