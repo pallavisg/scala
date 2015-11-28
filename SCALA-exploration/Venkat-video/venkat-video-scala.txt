@@ -1,12 +1,9 @@
 Why Scala? ...by a hilarious Indian guy
-
 https://www.youtube.com/watch?v=LH75sJAR0hc
-
 
 1)Separation of concerns is done in scala
 ->whatever details put in class in java put to class in scala.
 ->whatever details put in static method in java put to companion object in scala.
-
 2)';' not needed in scala
 Scala compiler can go line by line and check if the next line thing can work stand-alone
 and if not so it's part of the same line.
@@ -16,14 +13,10 @@ val car = new Car
 is same as
 val car = new 
 Car
-
 3)class-name and file-name may/may not be same.
-
 4)companion object name must be same as its class name
 because if companion object resides in other file,it makes identification easy.
-
 5)when not defined- default is 'val'.
-
 6)class Car{
 ....................
 ....................
@@ -36,7 +29,6 @@ object Car{
 val car = Car()
               |-> here object is accessed.
 
-
 6th oct
 7)Fp advantages-
 -assignment less programming
@@ -44,28 +36,16 @@ val car = Car()
 -function is a first class citizen
 -function is a smallest unit in scala not objects(objects compose of functions)
 -functions are higher order
-
-
 8)foreach usage in totalEven eg
-
 9)Spoke of triangulation-not explained
-
 10)Reusability eg
-
 11)Unit testing + Integration testing + Functional testing together bear huge importance
-
 12)function at a very root level has to be fed with type
-
 13)Less type in of code, more of type inference.
-
 14)In a list,addition of an element requires creation of new head and new element points to that. List is immutable so no
 problem of change of things arise. old & new lists co-exist.
-
-
 15)mentioned not explained pattern matching
-
 16)traits eg
-
 17)scala is a statically typed language still as type specification required at some places.
 xml is now a 1st class citizen
 18)actor
